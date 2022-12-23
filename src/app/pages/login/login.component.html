@@ -1,0 +1,22 @@
+<div class="div-form">
+    <main class="form-signin w-100 m-auto mt-5 text-center ">
+      <form [formGroup]="loginForm">
+        <img class="mb-4" src="" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    
+        <div class="form-floating">
+          <input formControlName="usuario" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Usuario</label>
+        </div>
+        <div class="form-floating">
+          <input formControlName="contraseña" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Contraseña</label>
+        </div>
+        <span *ngIf="validacionLogin" class="text-danger mb-3">
+          El usuario o la contraseña son incorrectos
+        </span>
+        <button (click)="validarLogin()" class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        <p class="mt-4 mb-3 text-muted">&copy; SUPER-GEST 2022</p>
+      </form>
+    </main>
+  </div>

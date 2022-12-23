@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { EmployeesService } from './services/employees.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +10,11 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 })
 export class AppComponent implements OnInit {
   title = 'super-gest';
-  constructor(private fb: FormBuilder){}
+  constructor(){}
 
-  loginForm = new FormGroup({
-    usuario: new FormControl('pija',Validators.required),
-    contraseña: new FormControl('paja',Validators.required),
-  })
 
   ngOnInit(){
+  }
 
-  }
-  get usuario(){
-    return this.loginForm.get('usuario');
-  }
+  
 }
