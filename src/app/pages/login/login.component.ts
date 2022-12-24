@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
       this.empService.login(this.usuario.value,this.contraseña.value).subscribe((resp:any)=>{
         console.log(resp.access)
         if (resp.access){
-          this.router.navigate(['navbar']);
+          this.router.navigate(['home']);
           return;
         }
         else

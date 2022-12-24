@@ -4,6 +4,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { CrearEmpleadoComponent } from './pages/crear-empleado/crear-empleado.component';
+import { ProductoComponent } from './pages/producto/producto.component';
+import { CrearProductoComponent } from './pages/crear-producto/crear-producto.component';
 
 const routes: Routes = [
   {
@@ -21,6 +23,14 @@ const routes: Routes = [
   {
     path:'crearEmpleado',
     component:CrearEmpleadoComponent
+  },
+  {
+    path:'crearProducto',
+    component:CrearProductoComponent
+  },
+  {
+    path:'producto',
+    component:ProductoComponent
   },
   {
     path:'**',

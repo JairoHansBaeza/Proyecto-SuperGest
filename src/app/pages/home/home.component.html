@@ -1,1 +1,21 @@
-<h1>home</h1>
+<app-navbar></app-navbar>
+<h1 style="text-align: center; margin-top:10px;margin-bottom: -20px;">Empleados</h1>
+<button routerLink="/crearEmpleado" class="form-control m-auto mt-5 bg-primary" style="width:60px;;color:white;">Crear</button>
+<table class="table w-50 m-auto mt-5">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Usuario</th>
+        <th scope="col">Rol Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let empleado of empleados">
+        <th scope="row">1</th>
+        <td>{{empleado.nombre}}</td>
+        <td>{{empleado.nombreUsuario}}</td>
+        <td>{{empleado.rolId}}</td>
+      </tr>
+    </tbody>
+  </table>

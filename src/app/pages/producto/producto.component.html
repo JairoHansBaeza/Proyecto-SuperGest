@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<h1 style="text-align: center; margin-top:10px;margin-bottom: -20px;">Productos</h1>
+<button routerLink="/crearProducto" class="form-control m-auto mt-5 bg-primary" style="width:60px;;color:white;">Crear</button>
+<table class="table w-50 m-auto mt-4">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Precio costo</th>
+        <th scope="col">Precio venta</th>
+        <th scope="col">Activo</th>
+        <th scope="col">Categoria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of productos">
+        <th scope="row">1</th>
+        <td>{{producto.nombre}}</td>    
+        <td>{{producto.stock}}</td>
+        <td>{{producto.precioCosto}}</td>
+        <td>{{producto.precioVenta}}</td>
+        <td>{{producto.activo}}</td>
+        <td>{{producto.categoriaId}}</td>
+      </tr>
+    </tbody>
+  </table>

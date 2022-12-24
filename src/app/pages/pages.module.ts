@@ -6,6 +6,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CrearEmpleadoComponent } from './crear-empleado/crear-empleado.component';
+import { ProductoComponent } from './producto/producto.component';
+import { CrearProductoComponent } from './crear-producto/crear-producto.component';
 
 
 
@@ -14,7 +16,9 @@ import { CrearEmpleadoComponent } from './crear-empleado/crear-empleado.componen
     HomeComponent,
     LoginComponent,
     NavbarComponent,
-    CrearEmpleadoComponent
+    CrearEmpleadoComponent,
+    ProductoComponent,
+    CrearProductoComponent
   ],
   imports: [
     CommonModule,
